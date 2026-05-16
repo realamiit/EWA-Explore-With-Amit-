@@ -51,6 +51,12 @@ const listingSchema = new mongoose.Schema({
   },
 });
 
+<<<<<<< HEAD
 const Listing = mongoose.model("Listing", listingSchema);
 
 module.exports = Listing;
+=======
+const listing = mongooes.model("Listing", listingSchema);
+module.exports = listing;
+
+>>>>>>> 219e50532c5bca95f04ebcd4f7747d2af613cc66
