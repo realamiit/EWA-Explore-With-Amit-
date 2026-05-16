@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWA(Explore with Amit)</title>
+</head>
+<body>
+    <h3>Eadit Your Listing </h3>
+    <form  method="POST" action="/listings/<%= listing._id %>?_method=PUT">
+        
+        <input name="listing[title]" value="<%= listing.title %>" placeholder="Enter title" type="text">
+        <br><br>
+         <textarea name="listing[description] value="<%= listing.description %>"></textarea>
+        <br><br>
+        <input name="listing[image]" value="<%= listing.image %>" type="text">
+        <br><br>
+        <input name="listing[price]" value="<%= listing.price %>" type="number">
+        <br><br>
+        <input name="listing[country]" value="<%= listing.country %>" type="text">
+        <br><br>
+        <input name="listing[location]" value="<%= listing.location %>" type="text">
+        <br><br>
+        <input name="listing[type]" value="<%= listing.type %>" type="number">
+        <br><br>
+        <input name="listing[guests]" value="<%= listing.guests %>" type="text">
+        <br><br>
+        <input name="listing[bedrooms]" value="<%= listing.bedrooms %>" type="text">
+        <br><br>
+        <input name="listing[rating]" value="<%= listing.rating %>" type="text">
+        <br><br>
+        <input name="listing[fee]" value="<%= listing.fee %>" type="text">
+        <br><br>
+        <br>
+
+        <button>Edit</button>
+        
+    </form>
+</body>
+</html>

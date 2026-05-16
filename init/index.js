@@ -1,6 +1,7 @@
-const mongooes = require("mongoose");
+const mongoose = require("mongoose");
 const initData = require("./data.js");
 const Listing = require("../models/listing.js");
+const { default: mongoose } = require("mongoose");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/test";
 
@@ -14,7 +15,7 @@ main()
   });
 
 async function main() {
-  await mongooes.connect(MONGO_URL);
+  await mongoose.connect(MONGO_URL);
 }
 
 const initDB = async () => {
