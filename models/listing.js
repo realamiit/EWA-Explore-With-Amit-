@@ -28,3 +28,4 @@ const listingSchema = new Schema({
 
 const listing = mongooes.model("Listing", listingSchema);
 module.exports = listing;
+
