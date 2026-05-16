@@ -14,6 +14,7 @@ const sampleListings = [
     fee: { cleaning: 80, service: 120 },
   },
   {
+    
     id: 2,
     title: "Beachfront Villa with Pool",
     description: "Luxurious beachfront villa featuring a private infinity pool, direct beach access, and stunning ocean views.",
