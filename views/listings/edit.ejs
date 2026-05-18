@@ -1,40 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EWA(Explore with Amit)</title>
-</head>
-<body>
+<% layout("/layouts/boilerplate") %>
+<br><br>
     <h3>Eadit Your Listing </h3>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
     <form  method="POST" action="/listings/<%= listing._id %>?_method=PUT">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="listing[title]" value="<%= listing.title %>" placeholder="Enter title" type="text" 
+        class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+         <textarea name="listing[description] class="form-control value="<%= listing.description %>" 
+            ></textarea>
+        </div>
+        <div class="mb3">
+        <label for="image" class="form-label">Image</label>
+        <input name="listing[image]" value="<%= listing.image %>" type="text"
+        class="form-control">
+        </div>
+        <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input name="listing[price]" value="<%= listing.price %>" type="number"
+        class="form-control">
+        </div>
+        <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input name="listing[country]" value="<%= listing.country %>" type="text"
+        class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+        <input name="listing[location]" value="<%= listing.location %>" type="text"
+        class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+        <input name="listing[type]" value="<%= listing.type %>" type="number"
+        class="form-control">
+        </div>
         
-        <input name="listing[title]" value="<%= listing.title %>" placeholder="Enter title" type="text">
+        <div class="mb-3 ">
+            <label for="guests" class="form-label">Guests</label>
+        <input name="listing[guests]" value="<%= listing.guests %>" type="number"
+        class="form-control">
         <br><br>
-         <textarea name="listing[description] value="<%= listing.description %>"></textarea>
-        <br><br>
-        <input name="listing[image]" value="<%= listing.image %>" type="text">
-        <br><br>
-        <input name="listing[price]" value="<%= listing.price %>" type="number">
-        <br><br>
-        <input name="listing[country]" value="<%= listing.country %>" type="text">
-        <br><br>
-        <input name="listing[location]" value="<%= listing.location %>" type="text">
-        <br><br>
-        <input name="listing[type]" value="<%= listing.type %>" type="number">
-        <br><br>
-        <input name="listing[guests]" value="<%= listing.guests %>" type="text">
-        <br><br>
-        <input name="listing[bedrooms]" value="<%= listing.bedrooms %>" type="text">
-        <br><br>
-        <input name="listing[rating]" value="<%= listing.rating %>" type="text">
-        <br><br>
-        <input name="listing[fee]" value="<%= listing.fee %>" type="text">
-        <br><br>
-        <br>
+        <div class="mb-3">
+            <label for="bedrooms" class="form-label">Bedrooms</label>
+        <input name="listing[bedrooms]" value="<%= listing.bedrooms %>" type="number"
+        class="form-control">
+        </div>
+        <div class="mb 3">
+            <label for="rating" class="form-label">Rating</label>
+        <input name="listing[rating]" value="<%= listing.rating %>" type="number" 
+        class="form-control">
+        </div>
+        <div class="mb 3">
+        <label for="fee" class="form-label">Fee</label>
+        <input name="listing[fee]"
+              value="<%= listing.fee %>"
+              type="number"
+               class="form-control">
+        </div>
+     
 
-        <button>Edit</button>
+        <br><br>
+
+        <button class="btn btn-dark edit-btn edit-btn-mt-3" >Edit</button>
         
     </form>
-</body>
-</html>
+    </div>
+</div>
