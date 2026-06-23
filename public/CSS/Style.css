@@ -18,7 +18,8 @@ body{
 
 .navbar {
     height: 5rem;
-    background-color: white;
+    background-color: rgb(236, 226, 226);
+    border-radius: 4px;
 }
 
 .fa-compass {
@@ -48,7 +49,7 @@ body{
 .f-info {
   display: flex;
   height: 8rem;
-  background-color: #ebebeb;
+  background-color: #ffffff;
   flex-wrap: wrap;
 
   justify-content: center;   /* horizontal center */
@@ -109,7 +110,7 @@ body{
 
 .card-img-overlay:hover{
    opacity: 0.2;
-   background-color: #ebebeb;
+   background-color: #ddbdbd;
 }
 
 /* new page */
